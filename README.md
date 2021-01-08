@@ -1,3 +1,10 @@
+Inicio.
+
+Ete proyecto inicia desde el servidor local por defecto, asi que utilizar el comando correspondiente (ng serve) o (ng serve --port 4200 ). 
+
+
+
+
 # PruebaCorralAngular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.

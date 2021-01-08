@@ -18,8 +18,7 @@ export class NewCorralComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  
-
+  //Funcion que nos purmite guardar un nuevo corral 
   saveCorral(formCorral:NgForm){
 
     if(formCorral.invalid){
