@@ -1,0 +1,41 @@
+.container-fluid{
+    margin: 3%;
+    width: 94%;
+    text-align: center;
+}
+
+.table-responsive {
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-radius: 3px;
+    float: left;
+    margin-left: 1%;
+    height: 300px;
+    width: 45%;
+  }
+  
+.table{
+    width: 100%;
+  }
+
+.form-select{
+    width: 100%;
+    float: left;
+  }
+
+.barGrafic{
+    width: 45%;
+    float: right;
+    height: 300px;
+}
+
+.selectCorral{
+    width: 45%;
+    text-align: left;
+}
+
+.averageAge{
+    width: 45%;
+    text-align: center;
+    float: right;
+}

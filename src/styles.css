@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+.table-responsive {
+    overflow-x: auto;
+    overflow-y: scroll;
+    border-radius: 10px;
+    float: left;
+    margin-left: 1%;
+    height: 70%;
+    width: 40%;
+  }
+  
+  .table{
+      width: 100%;
+  }

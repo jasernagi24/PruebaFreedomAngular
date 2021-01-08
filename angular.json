@@ -26,7 +26,12 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+							"node_modules/pdfmake/build/pdfmake.min.js",
+							"node_modules/pdfmake/build/vfs_fonts.js",
+							"node_modules/jszip/dist/jszip.min.js"
+                                                           
+            ]
           },
           "configurations": {
             "production": {
@@ -119,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "PruebaCorralAngular"
+    }
+  },
+  "defaultProject": "PruebaCorralAngular",
+  "cli": {
+    "analytics": "d901044f-0c4a-4f47-8c46-5bdb86fe2a36"
+  }
 }

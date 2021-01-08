@@ -1,0 +1,54 @@
+<div class="container-fluid">
+    <h2 style="margin-bottom: 2%;">Pagina principal</h2>
+    <div class="table-responsive"> 
+    <table class="table table-dark table-striped">
+    <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Edad</th>
+      <th scope="col">Clasificaion</th>
+      <th scope="col">Cantidad</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let animal of animals">
+      <th scope="row">{{animal.id}}</th>
+      <td>{{animal.name}}</td>
+      <td>{{animal.age}}</td>
+      <td>{{animal.classification}}</td>
+      <td>{{animal.quantity}}</td>
+    </tr>
+  </tbody>
+    </table>
+    </div>
+
+    <div class="barGrafic">
+      <div>
+        <div>
+          <div style="display: block">
+            <canvas baseChart
+              [datasets]="barChartData"
+              [labels]="barChartLabels"
+              [options]="barChartOptions"
+              [plugins]="barChartPlugins"
+              [legend]="barChartLegend"
+              [chartType]="barChartType">
+            </canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="selectCorral">
+        <label for="">Seleccion de corral</label>
+        <select class="form-select" aria-label="Default select example" (change)="selectionCorral($event.target.value)">
+            <option *ngFor="let corral of corrals" [value]='corral.id'>{{corral.name}}</option>
+        </select>
+    </div>
+
+    <div class="averageAge">
+      <h5>Promedio de edad: {{ average }}</h5>
+
+  </div>
+</div>
